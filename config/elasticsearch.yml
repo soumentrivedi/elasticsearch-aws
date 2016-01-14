@@ -19,7 +19,7 @@ discovery:
         enabled: false
   ec2:
     tag:
-      Name: ${EC2_NODE_NAME}  
+      Name: ${EC2_TAG_NODE_NAME}  
 plugin:
   mandatory: cloud-aws
 cloud:
