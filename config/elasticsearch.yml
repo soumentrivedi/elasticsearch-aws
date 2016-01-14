@@ -26,11 +26,13 @@ cloud:
   node:
     auto_attributes: true
   aws:
-    s3:
-      bucket: ${ES_S3_BUCKET_NAME}
     region: eu-west-1
     access_key: ${AWS_ACCESS_KEY_ID}
     secret_key: ${AWS_SECRET_KEY}
+repositories:
+  s3:
+    bucket: ${ES_S3_BUCKET_NAME}
+    region: eu-west-1
 gateway:
   recover_after_nodes: 1
   recover_after_time: 1m
