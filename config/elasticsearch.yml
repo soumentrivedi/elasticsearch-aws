@@ -38,7 +38,7 @@ gateway:
   recover_after_time: 1m
   expected_nodes: 3     
 index:
-  number_of_shards: 10
-  number_of_replicas: 2
+  number_of_shards: ${NUMBER_OF_SHARDS}
+  number_of_replicas: ${NUMBER_OF_REPLICAS}
 bootstrap:
   mlockall: true
