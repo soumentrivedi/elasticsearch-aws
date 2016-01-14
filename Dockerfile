@@ -1,5 +1,5 @@
 FROM ubuntu:trusty
-MAINTAINER CSP Support <csp.support@os.uk>
+MAINTAINER Soumen Trivedi
 
 RUN apt-get update && \
 	apt-get install -y wget curl && \
