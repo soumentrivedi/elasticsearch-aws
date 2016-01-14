@@ -31,8 +31,7 @@ ADD nginx_default /etc/nginx/sites-enabled/default
 # Mount elasticsearch.yml config
 ADD config/elasticsearch.yml /usr/share/elasticsearch/config/elasticsearch.yml
 
-RUN /usr/share/elasticsearch/bin/plugin install discovery-ec2 && \
-    /usr/share/elasticsearch/bin/plugin install repository-s3 && \
+RUN /usr/share/elasticsearch/bin/plugin install cloud-aws && \
     /usr/share/elasticsearch/bin/plugin install lmenezes/elasticsearch-kopf/v2.1.1 && \
     echo "daemon off;" >> /etc/nginx/nginx.conf && \
     chmod +x /*.sh && \
